@@ -1,4 +1,6 @@
-export default function DashboardLayout({
+import { Toaster } from "@/components/ui/sonner"
+
+export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -22,6 +24,7 @@ export default function DashboardLayout({
           <h1 className="text-xl font-medium">Shadcn Admin</h1>
         </div>
         {children}
+        <Toaster />
       </div>
     </div>
   );
